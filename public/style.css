@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  background-color: #fbf3f4;
+  width: 100%;
+}
+
+.masthead {
+  height: 40em;
+  margin-top: 0px;
+}
+
+.masthead-background {
+  background-image: url(https://cdn.glitch.global/dc778cf4-49d8-4739-b8fa-63cba4907335/pinkwall.jpg?v=1670770054567);
+  background-size: cover !important;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.masthead h1.ui.header {
+  margin-top: 1em;
+  margin-bottom: 0em;
+  font-size: 6em;
+  font-weight: bold;
+}
+
+.ui.vertical.segment:not(.masthead) {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.ui.button{
+  color: #eb9493;
+  background-color: #FFFFFF
+}
+
+.ui.label{
+  color: #eb9493; 
+  background-color: #FFFFFF
+}
+
+.ui.card{
+  color: #eb9493; 
+  background-color: #FFFFFF
+}
+

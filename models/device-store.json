@@ -1,0 +1,30 @@
+{
+  "deviceCollection": [
+    {
+      "id": "fa4f4cd0-78b8-11ed-8839-534b7fe0833a",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "GHD",
+      "type": "Straightener",
+      "chart": "https://tinyurl.com/wwjybjfh",
+      "newRead": {},
+      "readings": []
+    },
+    {
+      "id": "932a01c0-78b9-11ed-8839-534b7fe0833a",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Babyliss",
+      "type": "Crimper",
+      "chart": "https://tinyurl.com/wwjybjfh",
+      "newRead": {},
+      "readings": [
+        {
+          "id": "72be6ae0-78bc-11ed-877a-1393d464da38",
+          "temperature": "12.6",
+          "status": "On",
+          "onSince": "10.25",
+          "date": "12/10/2022, 6:57:09 PM"
+        }
+      ]
+    }
+  ]
+}

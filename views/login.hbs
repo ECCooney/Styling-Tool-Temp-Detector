@@ -1,0 +1,32 @@
+{{> welcomemenu id='login' }}
+
+<style>
+    .image {
+        margin-top: -100px;
+    }
+    .column {
+        margin-top: 50px;
+        max-width: 600px;
+    }
+</style>
+<div class="ui middle aligned center aligned grid">
+    <div class="column">
+        <h1 class="ui image header">
+        <img src="https://cdn.glitch.global/dc778cf4-49d8-4739-b8fa-63cba4907335/minilogo.png?v=1670773354937" class="image">
+            <div class="content">Log-in to Your Account</div>
+        </h1>
+        <form class="ui large segment form" action="/authenticate" method="POST">
+            <div class="field">
+                <label>Email</label> <input placeholder="Email" name="email">
+            </div>
+            <div class="field">
+                <label>Password</label> <input type="password" name="password">
+            </div>
+            <button class="ui fluid submit button">Login</button>
+        </form>
+        <div class ="ui message">
+            No Account Yet?
+            <a href="/signup">Sign Up</a>
+        </div>
+    </div>
+</div>

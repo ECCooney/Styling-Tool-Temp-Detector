@@ -1,0 +1,33 @@
+<table class="ui table">
+  <thead>
+    <tr>
+        <th>Timestamp</th>
+        <th>Temp</th>
+        <th>Status</th>
+        <th>On Since</th>
+        <th></th>
+    </tr>
+  </thead>
+  <tbody>
+        {{#each device.readings}}
+        <tr>
+          <td>
+           {{date}}
+          </td>
+          <td>
+              {{temperature}}
+            </td>
+            <td>
+              {{status}}
+            </td>
+          <td>
+              {{onSince}}
+          </td>
+          <td>
+          <a href="/device/{{../device.id}}/deletereading/{{id}}" class="ui icon button">
+            <i class="icon trash"></i></a>
+          </td>
+          </tr>
+        {{/each}}
+      </tbody>
+</table>

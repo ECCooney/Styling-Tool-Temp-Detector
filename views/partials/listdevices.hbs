@@ -1,0 +1,16 @@
+ {{#each devices}}
+   <section class="ui container">
+  <br>
+    <h2 class="ui header">
+      {{name}}
+    </h2>
+      <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="{{chart}}"></iframe>
+  </div>
+  <br>
+   <a href="/device/{{id}}" class="ui icon button">
+      <i class="big icon folder open"></i>
+    </a>
+    <a href="/dashboard/deleteDevice/{{id}}" class="ui icon button">
+      <i class="big icon trash"></i>
+    </a>
+{{/each}}

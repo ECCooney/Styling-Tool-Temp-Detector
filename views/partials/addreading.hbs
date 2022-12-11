@@ -1,0 +1,17 @@
+<form class="ui stacked segment form" action="/device/{{device.id}}/addreading" method="POST">
+    <div class="three fields">
+        <div class="field">
+            <label>Temperature</label>
+            <input placeholder="00.0C" type="text" name="temperature">
+        </div>
+        <div class="field">
+            <label>Status</label>
+            <input placeholder="off" type="text" name="status">
+        </div>
+        <div class="field">
+            <label>On Since</label>
+            <input placeholder="09:45am" type="text" name="onSince">
+        </div>
+    </div>
+    <button class="ui basic submit button">Submit Report</button>
+</form>
