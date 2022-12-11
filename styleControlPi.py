@@ -43,7 +43,8 @@ async def main():
         print ("start", startTemp)
         print ("now", tempNow)
 
-        if avgTemp > 50 and startTemp > 50 and tempNow > 50:  #if the temp has been over X for 90 mins and is still reading at that temp
+        if avgTemp > 20 and startTemp > 20 and tempNow > 20:  #if the temp has been over X for 90 mins and is still reading at that temp
+            blynk.log_event("still_on")  #sends push notifiation to Blynk app
             await plug.turn_off()  # Turn the device off
             continue
 
