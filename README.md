@@ -7,7 +7,7 @@ The Raspberry Pi collects temperature data every 10 minutes and at all times wil
 
 The data is viewable in a Blynk application, which shows the current temp, the temperature history, and the current device state. The installed Blynk application will also send the user a push notification when the device has automatically switched off as described above.
 
-As an optional extra, the data can also be published to the Thingspeak platform using the MQTT protocol. This data is then accessed and displayed in graph format to a companion web application, which can allow users to monitor multiple devices. This web app has been developed in Glitch.
+As an optional extra, the data can also be published to the Thingspeak platform using the MQTT protocol. This data is then accessed and displayed in graph format to a companion web application, which can allow users to monitor multiple devices. This web app has been developed in Glitch. You can view the code for this here: https://glitch.com/~style-control or in the Glitch branch of this repo.
 
 ![stylecontrol](https://user-images.githubusercontent.com/95751749/207833988-5e99a662-ae00-43e1-b25a-cc633b5c9518.PNG)
 
