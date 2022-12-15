@@ -9,7 +9,9 @@ The data is viewable in a Blynk application, which shows the current temp, the t
 
 As an optional extra, the data can also be published to the Thingspeak platform using the MQTT protocol. This data is then accessed and displayed in graph format to a companion web application, which can allow users to monitor multiple devices. This web app has been developed in Glitch. You can view the code for this here: https://glitch.com/~style-control or in the Glitch branch of this repo.
 
-![stylecontrol](https://user-images.githubusercontent.com/95751749/207833988-5e99a662-ae00-43e1-b25a-cc633b5c9518.PNG)
+Glitch Web App          |  Blynk Mobile App
+:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/95751749/207833988-5e99a662-ae00-43e1-b25a-cc633b5c9518.PNG)  |  ![](https://user-images.githubusercontent.com/95751749/207882467-3931b25c-03fb-4a56-8e5a-95e71dcaf66c.JPG)
 
 If you'd like to get an idea of what the web application for a user with registered devices looks like, you can log in using the credentials:
 emai: homer@simpson.com
