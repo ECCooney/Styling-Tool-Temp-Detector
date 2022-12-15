@@ -5,14 +5,18 @@ import BlynkLib
 import time
 from kasa import SmartPlug
 from sense_hat import SenseHat
+from dotenv import dotenv_values
 
 sense = SenseHat()
 sense.clear
 temp_array = [0] * 10  #initialise an array to store temps
-plug = SmartPlug("192.168.0.23") #kasa plug
+plug = SmartPlug("YOUR KASA PLUG IP") #kasa plug
+
+#load auth token values from .env file
+config = dotenv_values(".env")
 
 #auth details for Blynk
-BLYNK_AUTH = 'MOz7cmyZpWgaw-DsYsRKCdlxW--8bd7J'
+BLYNK_AUTH = 'config["blynkauth"]'
 blynk = BlynkLib.Blynk(BLYNK_AUTH)
 
 #loop which gathers the data and switches the plug off, and sends a notification
@@ -43,7 +47,7 @@ async def main():
         print ("start", startTemp)
         print ("now", tempNow)
 
-        if avgTemp > 20 and startTemp > 20 and tempNow > 20:  #if the temp has been over X for 90 mins and is still reading at that temp
+        if avgTemp > 50 and startTemp > 50 and tempNow > 50:  #if the temp has been over X for 90 mins and is still reading at that temp
             blynk.log_event("still_on")  #sends push notifiation to Blynk app
             await plug.turn_off()  # Turn the device off
             continue
