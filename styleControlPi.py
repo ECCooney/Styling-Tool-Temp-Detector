@@ -37,7 +37,7 @@ async def main():
 
         for pos in range( 9, 0, -1): temp_array[pos] = temp_array[pos-1] # move data along array
         temp_array[0] = temp   #store new temp
-        time.sleep(1)
+        time.sleep(600)
         avgTemp = 0   #set initial avg temp
         for pos in range(10): avgTemp += temp_array[pos] #get all temps in array
         avgTemp /= 10
