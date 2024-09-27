@@ -1,0 +1,43 @@
+{{> welcomemenu id="about"}}
+
+<div class="ui container">
+    <br>
+    <div class="ui horizontal divider">
+        <h1 class="ui header">Style Control Overview</h1>
+    </div>
+</div>
+<div class="ui container">
+    <div class="ui vertical segment">
+        <div class="ui three column stackable center aligned grid container">
+            <div class="column">
+                <img class="ui centered small circular image" src="https://cdn.glitch.global/dc778cf4-49d8-4739-b8fa-63cba4907335/app.jpg?v=1671109299723">
+                <h1 class="ui header">The Application</h1>
+                <p>
+                    This project is a heated styling tool monitoring and control system. Temp data is collected every 10 minutes and at all times will have the last hour's worth of data stored.
+                  Based on these readings if a heated device has been left on/heated for over 100 minutes, and if so, will automatically turn the device off. </p>
+                <p>
+                  The data is viewable in a mobile application, which shows the current temp, the temperature history, and the current device state.
+                  The installed application will also send the user a push notification when the device has automatically switched off as described above. 
+                  As an optional extra, the data can also be accessed and displayed in graph format on this companion web application, which can allow users to monitor multiple devices. 
+                </p>
+            </div>
+            <div class="column">
+                <img class="ui centered small circular image" src="https://cdn.glitch.global/dc778cf4-49d8-4739-b8fa-63cba4907335/sense-hat.png?v=1671109178191">
+                <h1 class="ui header">The Technologies</h1>
+                <p>
+                   The application is primarily based around the Raspberry Pi, and the TP-Link Kasa Smart Plug series. The programs are written in Python, making use of the
+                   python-kasa library to control the plug.
+                 <p>  The mobile application is delivered through Blynk while allows for the data to be viewed, and push notifications to be sent.</p>
+                  <p> ThingSpeak's MQTT protocol is used to get temperature data to display in chart form on the web application.</p>
+                </p>
+            </div>
+            <div class="column">
+                <img class="ui centered small circular image" src="https://cdn.glitch.global/dc778cf4-49d8-4739-b8fa-63cba4907335/this_is_fine.jpg?v=1671109182222">
+                <h1 class="ui header">The Developer</h1>
+                <p>
+                    Ellen Cooney is an over anxious person with over anxious friends who have been known to take pictures of unplugged hot appliances when leaving the house to avoid the "Did I leave the straightener on?" panic
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

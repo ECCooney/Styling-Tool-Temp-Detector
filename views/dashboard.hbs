@@ -1,0 +1,12 @@
+{{> menu id="dashboard"}}
+
+<div class="ui container">
+  <br>
+    <h1 class="ui header">{{user.firstName}}'s Devices</h1>
+    <div class="ui section divider"></div>
+  </div>
+    {{> listdevices}}
+  <div class="ui section divider"></div>
+    <h3 class="ui header">Add a New Device</h3>
+    {{> adddevice}}
+</div>
